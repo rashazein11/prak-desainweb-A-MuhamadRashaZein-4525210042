@@ -1,0 +1,255 @@
+/* =====================================================
+   Tugas Praktikum Pertemuan 4 - Desain Web
+   Halaman Profil Mahasiswa (index.html + style.css)
+   Konsep: Box Model, class reusable, media query < 768px
+   ===================================================== */
+
+/* ===== Reset & Variabel ===== */
+:root {
+  --biru: #003366;
+  --biru-muda: rgb(0, 102, 153);
+  --oranye: hsl(28, 90%, 52%);
+  --latar: #eef2f6;
+  --latar-alt: #e1e9f1;
+  --putih: #ffffff;
+  --teks: #333333;
+}
+
+/* Box model: border-box membuat width sudah termasuk padding + border */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: var(--teks);
+  background: var(--latar);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== Class reusable 1: .container =====
+   Membatasi lebar konten + padding kiri/kanan (box model) */
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Class reusable 2: .card =====
+   content + padding + border + margin (box model lengkap) */
+.card {
+  background: var(--putih);
+  padding: 28px;
+  border: 2px solid var(--biru-muda);
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 51, 102, 0.18);
+}
+
+.card h3 {
+  color: var(--biru);
+  margin-bottom: 14px;
+}
+
+.card p {
+  line-height: 1.8;
+}
+
+/* ===== Class reusable 3: .section-title ===== */
+.section-title {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--biru-muda);
+  font-size: 1.6rem;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  padding-left: 12px;
+  border-left: 6px solid var(--oranye);
+}
+
+/* ===== Class reusable 4: .btn ===== */
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--oranye);
+  color: var(--putih);
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--biru);
+}
+
+/* ===== Header ===== */
+.header {
+  background: var(--biru);
+  color: var(--putih);
+  padding: 16px 0;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: var(--putih);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  margin-left: 20px;
+  color: var(--putih);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: var(--oranye);
+}
+
+/* ===== Hero ===== */
+.hero {
+  padding: 64px 0;
+  background: var(--latar-alt);
+  border-bottom: 4px solid var(--oranye);
+}
+
+.hero__inner {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero__foto {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 4px solid var(--biru);
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px var(--oranye);
+}
+
+.hero__teks h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--biru);
+  font-size: 2.2rem;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.hero__teks p {
+  max-width: 520px;
+  margin-bottom: 24px;
+}
+
+/* ===== Section ===== */
+.section {
+  padding: 56px 0;
+}
+
+/* ===== Data pribadi ===== */
+.data dd {
+  margin-bottom: 10px;
+}
+
+.data dt {
+  font-weight: bold;
+  color: var(--biru);
+}
+
+/* ===== Kutipan ===== */
+.quote {
+  margin-top: 16px;
+  padding: 15px;
+  background: rgba(0, 102, 153, 0.12);
+  color: var(--biru);
+  font-style: italic;
+  border-radius: 8px;
+}
+
+/* ===== 3 card: 3 kolom di desktop ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.skills {
+  padding-left: 20px;
+  line-height: 2;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: var(--biru);
+  color: var(--putih);
+  text-align: center;
+  padding: 24px 0;
+}
+
+/* =====================================================
+   Responsive: layar di bawah 768px
+   ===================================================== */
+@media (max-width: 767px) {
+  .header__inner {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+
+  .hero {
+    padding: 40px 0;
+  }
+
+  .hero__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero__teks h1 {
+    font-size: 1.7rem;
+  }
+
+  .hero__teks p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  /* 3 card jadi 1 kolom */
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

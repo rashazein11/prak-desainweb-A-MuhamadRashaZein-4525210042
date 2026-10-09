@@ -1,0 +1,89 @@
+/* =========================
+   PENGATURAN DASAR HALAMAN
+   ========================= */
+body {
+  font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif; font-size: 16px;
+  line-height: 1.7; color: #333333;
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #a062db 0%, #6a3fb5 50%, #3b1f7a 100%);
+  background-attachment: fixed;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+  background: linear-gradient(135deg, #b98af0, #a062db, #7d44c9);
+  color: rgb(255, 255, 255);
+  text-align: center; padding: 30px;
+}
+
+header h1 {
+  font-size: 32px; font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profesi {
+  text-align: center;
+  font-size: 18px;
+  font-weight: normal;
+  color: rgba(248, 248, 248, 0.85);
+}
+
+.foto-profil {
+  width: 150px; height: 150px;
+  border-radius: 30%; border: 2px solid rgb(236, 230, 230);
+}
+
+/* =========================
+   KONTEN UTAMA
+   ========================= */
+main {
+  width: 80%; margin: 30px auto;
+  border-radius: 8%;
+  background-color: rgb(255, 255, 255); padding: 30px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #a062db; font-size: 25px;
+  border-bottom: 2px solid #0a0a0a; padding-bottom: 5px;
+}
+
+p {
+  font-size: 20px; text-align: justify;
+  text-align: center;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+/* =========================
+   HYPERLINK
+   ========================= */
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+  background: linear-gradient(135deg, #7d44c9, #a062db, #b98af0);
+  color: rgb(255, 255, 255);
+  text-align: center; padding: 15px;
+}
+
+footer p {
+  text-align: center; font-size: 14px;
+}
