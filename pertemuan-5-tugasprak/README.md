@@ -47,9 +47,11 @@ pertemuan-05/
 - **Media query:** `@media (max-width: 900px)` untuk tablet dan `@media (max-width: 600px)` untuk smartphone.
 
 ## Screenshot
-| Desktop | Mobile |
-|---|---|
-| ![](dokumentasi/tampilan-desktop.png) | ![](dokumentasi/tampilan-mobile.png) |
+### Tampilan Desktop (lebar 1440px)
+![Tampilan desktop company profile Facebook](dokumentasi/tampilan-desktop.png)
+
+### Tampilan Mobile (lebar 390px)
+<img src="dokumentasi/tampilan-mobile.png" alt="Tampilan mobile company profile Facebook" width="300">
 
 ## Ringkasan Solusi
 Pada tugas ini saya membuat wireframe mid-fidelity bertema Company Profile dengan studi kasus Facebook, dalam dua file terpisah yaitu index.html untuk struktur dan style.css untuk tampilan. Struktur halaman mengikuti anatomi standar, yaitu header, navbar, sidebar, konten utama (hero, card grid, produk dan layanan, ajakan karier), serta footer, dengan elemen semantik agar susunannya jelas. Setiap area diberi anotasi fungsi berupa catatan kuning supaya tujuan tiap bagian mudah dipahami. Gambar yang dipakai sudah dipasang pada tiap area (logo, hero, card, produk, karier) agar proporsi tiap bagian terlihat nyata. Masalah yang muncul adalah sidebar, tiga card, dan navbar yang terlalu sempit jika tetap berjajar di layar kecil. Solusinya, saya menambahkan dua media query: pada lebar maksimal 900px sidebar menjadi menu horizontal dan card menjadi dua kolom, lalu pada lebar maksimal 600px semua elemen disusun satu kolom. Hasilnya sudah diuji pada ukuran desktop dan mobile tanpa scroll horizontal, sehingga kerangka halaman siap dilanjutkan ke tahap mockup visual pada pertemuan berikutnya.
