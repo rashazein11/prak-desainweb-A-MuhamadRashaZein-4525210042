@@ -1,0 +1,413 @@
+:root {
+    --facebook-blue: #0866ff;
+    --facebook-blue-dark: #0649b5;
+    --facebook-blue-deep: #003e9c;
+    --facebook-blue-soft: #e7f3ff;
+    --surface: #ffffff;
+    --page-background: #f0f2f5;
+    --text: #1c2b33;
+    --muted-text: #4b5563;
+    --border: #c8d1dc;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--page-background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ANOTASI */
+.note {
+    font-size: 12px;
+    font-style: italic;
+    color: var(--muted-text);
+    background-color: #fffbd0;
+    border: 1px dashed #d4c66a;
+    padding: 4px 8px;
+    margin: 10px auto 0;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+    background-color: var(--facebook-blue-dark);
+    color: var(--surface);
+    border-bottom: 2px solid var(--facebook-blue-dark);
+    padding: 20px 0;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    background-color: var(--surface);
+    border-radius: 50%;
+}
+
+.brand h1 {
+    margin: 0;
+}
+
+.brand p {
+    margin: 0;
+}
+
+.profile {
+    padding: 10px 20px;
+    border: 1px solid var(--surface);
+    border-radius: 6px;
+    background-color: var(--surface);
+    color: var(--facebook-blue-dark);
+}
+
+/* =========================
+   NAV
+   ========================= */
+nav {
+    background-color: var(--facebook-blue-dark);
+    border-bottom: 2px solid var(--facebook-blue-dark);
+}
+
+.nav-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--surface);
+}
+
+nav a:hover {
+    background-color: var(--facebook-blue);
+}
+
+/* =========================
+   MAIN LAYOUT
+   ========================= */
+.main-layout {
+    display: grid;
+    grid-template-columns: 230px 1fr;
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   SIDEBAR
+   ========================= */
+.sidebar {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    align-self: start;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+}
+
+.sidebar a {
+    display: block;
+    color: var(--facebook-blue-dark);
+    text-decoration: none;
+    border-bottom: 1px solid var(--border);
+    padding: 12px 0;
+}
+
+.sidebar a:hover {
+    font-weight: bold;
+}
+
+/* =========================
+   CONTENT
+   ========================= */
+.content {
+    min-width: 0;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.hero {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--surface);
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    min-height: 220px;
+    border: 2px dashed #8bbcfb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--facebook-blue-soft);
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.label {
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: var(--facebook-blue-dark);
+}
+
+button {
+    padding: 12px 20px;
+    border: 1px solid var(--facebook-blue-dark);
+    border-radius: 6px;
+    background-color: var(--facebook-blue-dark);
+    color: var(--surface);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--facebook-blue-deep);
+}
+
+/* =========================
+   SECTION TITLE
+   ========================= */
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title a {
+    color: var(--facebook-blue-dark);
+}
+
+/* =========================
+   CARD
+   ========================= */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.card-image {
+    height: 140px;
+    background-color: var(--facebook-blue-soft);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card a {
+    color: var(--facebook-blue-dark);
+    font-weight: bold;
+}
+
+/* =========================
+   LAYANAN / PRODUK
+   ========================= */
+.layanan {
+    margin-top: 40px;
+}
+
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.layanan-item {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background-color: var(--surface);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.layanan-item span {
+    color: var(--facebook-blue-dark);
+}
+
+.layanan-item img {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+    display: block;
+}
+
+.layanan-item span {
+    padding: 10px;
+    text-align: center;
+}
+
+/* =========================
+   KARIER
+   ========================= */
+.karier {
+    margin-top: 40px;
+    padding: 25px 30px;
+    border: 1px solid #b7d5fb;
+    border-radius: 8px;
+    background-color: var(--facebook-blue-soft);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.karier-image {
+    width: 140px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.karier-text {
+    flex: 1;
+}
+
+.karier h2,
+.karier p {
+    margin: 0;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    background-color: #1b1f23;
+    color: var(--surface);
+    border-top: 3px solid var(--facebook-blue);
+    padding: 25px 0;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 900px) {
+    .main-layout {
+        grid-template-columns: 1fr;
+    }
+    .sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .sidebar h3 {
+        width: 100%;
+    }
+    .sidebar a {
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        padding: 10px;
+    }
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .layanan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   SMARTPHONE
+   ========================= */
+@media (max-width: 600px) {
+    .header-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    .nav-wrapper {
+        flex-direction: column;
+    }
+    nav a {
+        border-bottom: 1px solid rgb(255 255 255 / 25%);
+    }
+    .hero {
+        grid-template-columns: 1fr;
+    }
+    .hero-image {
+        min-height: 160px;
+    }
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+    .layanan-grid {
+        grid-template-columns: 1fr;
+    }
+    .karier {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .karier-image {
+        width: 100%;
+        height: 160px;
+    }
+    .footer-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
