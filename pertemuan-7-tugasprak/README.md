@@ -1,7 +1,7 @@
 # Praktikum Desain Web - HTML Form Dasar: Input & Pengiriman Data
 
 **Nama:** Muhamad Rasha Zein
-**NPM:** [isi NPM kamu]
+**NPM:** [4525210042]
 
 ## Struktur Folder
 
@@ -25,13 +25,13 @@ latihan/
 
 | Desktop | Mobile |
 |---|---|
-| ![Desktop](individu/desain-web/pertemuan-07/dokumentasi/desktop.png) | <img src="individu/desain-web/pertemuan-07/dokumentasi/mobile.png" width="260" alt="Mobile"> |
+| ![Desktop](latihan/individu/desain-web/pertemuan-07/dokumentasi/desktop.png) | <img src="latihan/individu/desain-web/pertemuan-07/dokumentasi/mobile.png" width="260" alt="Mobile"> |
 
 ### Studi Kasus - Form Penerimaan Mahasiswa Baru
 
 | Desktop | Mobile |
 |---|---|
-| ![Desktop](studi-kasus/desain-web/pertemuan-07/dokumentasi/desktop.png) | <img src="studi-kasus/desain-web/pertemuan-07/dokumentasi/mobile.png" width="260" alt="Mobile"> |
+| ![Desktop](latihan/studi-kasus/desain-web/pertemuan-07/dokumentasi/desktop.png) | <img src="latihan/studi-kasus/desain-web/pertemuan-07/dokumentasi/mobile.png" width="260" alt="Mobile"> |
 
 ## Ringkasan
 
