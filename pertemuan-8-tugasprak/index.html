@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registrasi Event Seminar Teknologi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Registrasi Event Seminar Teknologi</h1>
+  <p class="note">Kolom bertanda * wajib diisi.</p>
+
+  <form action="submit.php" method="post" enctype="multipart/form-data">
+
+    <label for="nama">Nama Lengkap *</label>
+    <input type="text" id="nama" name="nama" minlength="3" maxlength="50" required>
+
+    <label for="nim">NIM (10 digit) *</label>
+    <input type="text" id="nim" name="nim" pattern="[0-9]{10}" maxlength="10" title="Isi tepat 10 digit angka" required>
+
+    <label for="email">Email *</label>
+    <input type="email" id="email" name="email" maxlength="100" required>
+
+    <fieldset>
+      <legend>Jenis Peserta *</legend>
+      <input type="radio" id="mahasiswa" name="jenis_peserta" value="mahasiswa" required>
+      <label for="mahasiswa" class="inline">Mahasiswa</label>
+      <input type="radio" id="umum" name="jenis_peserta" value="umum">
+      <label for="umum" class="inline">Umum</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Topik yang Diminati</legend>
+      <input type="checkbox" id="web" name="minat[]" value="web">
+      <label for="web" class="inline">Web Development</label>
+      <input type="checkbox" id="uiux" name="minat[]" value="uiux">
+      <label for="uiux" class="inline">UI/UX Design</label>
+      <input type="checkbox" id="ai" name="minat[]" value="ai">
+      <label for="ai" class="inline">Artificial Intelligence</label>
+      <input type="checkbox" id="data" name="minat[]" value="data">
+      <label for="data" class="inline">Data Science</label>
+    </fieldset>
+
+    <label for="program-studi">Program Studi *</label>
+    <select id="program-studi" name="program_studi" required>
+      <option value="">-- Pilih Program Studi --</option>
+      <option value="informatika">Teknik Informatika</option>
+      <option value="sistem-informasi">Sistem Informasi</option>
+      <option value="mesin">Teknik Mesin</option>
+      <option value="elektro">Teknik Elektro</option>
+      <option value="sipil">Teknik Sipil</option>
+    </select>
+
+    <label for="alasan">Alasan Mengikuti Kegiatan *</label>
+    <textarea id="alasan" name="alasan" rows="5" minlength="20" maxlength="300" placeholder="Tuliskan alasan Anda..." required></textarea>
+
+    <label for="cv">Upload CV (PDF, maks. 2 MB) *</label>
+    <input type="file" id="cv" name="cv" accept=".pdf" required>
+
+    <button type="submit">Daftar</button>
+  </form>
+</main>
+</body>
+</html>
