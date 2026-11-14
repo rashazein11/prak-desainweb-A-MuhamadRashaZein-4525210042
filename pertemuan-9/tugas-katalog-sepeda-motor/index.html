@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Sepeda Motor - Bootstrap</title>
+
+    <!-- Bootstrap 5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS tambahan -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ==================================
+         HEADER
+    ================================== -->
+    <header class="bg-primary text-white py-4">
+        <div class="container">
+            <h1 class="mb-1">Katalog Sepeda Motor</h1>
+            <p class="mb-0">Praktikum Desain Web - Bootstrap Grid System &amp; Table</p>
+            <p class="mb-0 small">Nama: Muhamad Rasha Zein</p>
+        </div>
+    </header>
+
+    <!-- ==================================
+         CONTENT
+    ================================== -->
+    <main class="container my-5">
+
+        <!-- Judul bagian grid -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2>Motor Terbaru</h2>
+                <p class="text-secondary">
+                    Tampilan motor akan menyesuaikan ukuran perangkat secara otomatis.
+                </p>
+            </div>
+        </div>
+
+        <!-- ==================================
+             GRID PRODUK
+        ================================== -->
+        <div class="row g-4">
+
+            <!-- Produk 1 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/produk-1.jpg" class="card-img-top" alt="Honda Beat">
+                    <div class="card-body">
+                        <h5 class="card-title">Honda Beat</h5>
+                        <p class="card-text">Motor matic irit dan ringan, cocok untuk pemakaian harian.</p>
+                        <a href="#" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 2 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/produk-2.jpg" class="card-img-top" alt="Yamaha NMAX">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha NMAX</h5>
+                        <p class="card-text">Maxi scooter nyaman untuk perjalanan jarak menengah.</p>
+                        <a href="#" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 3 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/produk-3.jpg" class="card-img-top" alt="Honda Vario 160">
+                    <div class="card-body">
+                        <h5 class="card-title">Honda Vario 160</h5>
+                        <p class="card-text">Matic bertenaga dengan desain sporty dan modern.</p>
+                        <a href="#" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Produk 4 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="images/produk-4.jpg" class="card-img-top" alt="Yamaha Aerox">
+                    <div class="card-body">
+                        <h5 class="card-title">Yamaha Aerox</h5>
+                        <p class="card-text">Matic sport dengan tampilan agresif untuk anak muda.</p>
+                        <a href="#" class="btn btn-primary">Lihat Detail</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    
+
+        <div class="row align-items-center mb-4 mt-5">
+            <div class="col-12 col-md-8">
+                <h2>Daftar Sepeda Motor</h2>
+                <p class="text-secondary mb-md-0">Data motor yang tersedia di katalog.</p>
+            </div>
+            <div class="col-12 col-md-4 text-md-end mt-3 mt-md-0">
+                <button class="btn btn-primary">+ Tambah Motor</button>
+            </div>
+        </div>
+
+        <!-- ==================================
+             INFORMASI RINGKAS
+        ================================== -->
+        <div class="row g-3 mb-4">
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="text-secondary mb-1">Total Motor</p>
+                        <h3 class="mb-0">20</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="text-secondary mb-1">Motor Tersedia</p>
+                        <h3 class="mb-0 text-success">17</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <p class="text-secondary mb-1">Stok Habis</p>
+                        <h3 class="mb-0 text-warning">3</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ==================================
+             TABEL
+        ================================== -->
+        <div class="card shadow-sm">
+            <div class="card-header bg-white py-3">
+                <h3 class="h5 mb-0">Data Sepeda Motor</h3>
+            </div>
+            <div class="card-body">
+
+                <!-- Tabel responsive -->
+                <div class="table-responsive">
+                    <table class="table table-striped table-hover align-middle">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>No.</th>
+                                <th>Kode</th>
+                                <th>Nama Motor</th>
+                                <th>Tipe</th>
+                                <th>Kapasitas Mesin</th>
+                                <th>Status</th>
+                                <th>Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>MTR-001</td>
+                                <td>Honda Beat</td>
+                                <td>Matic</td>
+                                <td>110 cc</td>
+                                <td><span class="badge text-bg-success">Tersedia</span></td>
+                                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>MTR-002</td>
+                                <td>Yamaha NMAX</td>
+                                <td>Maxi Scooter</td>
+                                <td>155 cc</td>
+                                <td><span class="badge text-bg-success">Tersedia</span></td>
+                                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>MTR-003</td>
+                                <td>Honda Vario 160</td>
+                                <td>Matic</td>
+                                <td>160 cc</td>
+                                <td><span class="badge text-bg-warning">Stok Habis</span></td>
+                                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>MTR-004</td>
+                                <td>Yamaha Aerox</td>
+                                <td>Matic Sport</td>
+                                <td>155 cc</td>
+                                <td><span class="badge text-bg-success">Tersedia</span></td>
+                                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>MTR-005</td>
+                                <td>Honda CB150R</td>
+                                <td>Sport</td>
+                                <td>150 cc</td>
+                                <td><span class="badge text-bg-success">Tersedia</span></td>
+                                <td><button class="btn btn-sm btn-primary">Detail</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!-- ==================================
+         FOOTER
+    ================================== -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Praktikum Desain Web - Muhamad Rasha Zein</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
